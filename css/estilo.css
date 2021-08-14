@@ -1,0 +1,345 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  color: gray;
+  background-color: #dac7bc;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header {
+  color: #043923;
+  font-family: "Abril Fatface", cursive;
+  font-size: 2.5rem;
+  margin: 2rem;
+}
+
+/*COMIENZO NAV*/
+
+.menu {
+  width: auto;
+  font-size: 1.5rem;
+  list-style-type: none;
+  background: radial-gradient(#0d4d32, #043923);
+}
+.menu__lista {
+  display: inline-block;
+  padding: 2rem 0rem;
+}
+.menu__lista__item {
+  display: inline;
+  padding: 5rem;
+}
+
+.menu__lista__item--vinculo {
+  text-decoration: none;
+  color: #dac7bc;
+}
+.menu__lista__item--vinculo:hover {
+  color: #9ba073;
+  text-decoration: underline;
+  animation-duration: 1s;
+  animation-name: aparecer;
+  animation-iteration-count: infinite;
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+
+/*FIN DEL NAV*/
+
+/*INDEX*/
+
+/*GRIDS*/
+.container {
+  display: grid;
+  grid-template-columns: 350px auto 350px;
+  grid-template-rows: 1fr 80px 550px 5fr 100px;
+  grid-template-areas:
+    "header header header"
+    "menu menu menu"
+    "portada portada portada"
+    "section section section"
+    "footer footer footer";
+}
+.header {
+  grid-area: header;
+}
+.menu {
+  grid-area: menu;
+}
+.portada {
+  grid-area: portada;
+}
+.sectionIndex {
+  grid-area: section;
+}
+.pieDePagina {
+  grid-area: footer;
+}
+
+/*PORTADA*/
+.portada {
+  background-color: #043923;
+  margin: 0;
+  padding-bottom: 40px;
+  overflow: hidden;
+}
+.portada img:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+/*FIN PORTADA*/
+.sectionIndex {
+  background-color: #043923;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 40px;
+  align-items: center;
+}
+/*COMIENZO MAIN INDEX*/
+.main {
+  color: #9ba073;
+  padding: 2rem;
+}
+.main__subtitulo {
+  font-family: "Abril Fatface", cursive;
+  font-size: 2.5rem;
+  padding-bottom: 30px;
+}
+.main__texto {
+  line-height: 3rem;
+  font-size: 1.2rem;
+}
+/*FIN MAIN INDEX*/
+
+/*SECCION VINOS*/
+
+/*GRIDS*/
+
+.container--vinos {
+  display: grid;
+  grid-template-columns: 350px auto 350px;
+  grid-template-rows: 1fr 80px auto auto;
+  grid-template-areas:
+    "header header header"
+    "menu menu menu"
+    "section section section"
+    "footer footer footer";
+}
+.header {
+  grid-area: header;
+}
+.menu {
+  grid-area: menu;
+}
+.tiposDeVinos_section {
+  grid-area: section;
+}
+.pieDePagina {
+  grid-area: footer;
+}
+/*FIN GRIDS VINOS*/
+
+.tiposDeVinos_section {
+  background-color: #043923;
+  border-top: 2px solid #dac7bc;
+  padding-bottom: 40px;
+}
+.tituloVinos {
+  font-size: 3rem;
+  font-family: "Abril Fatface", cursive;
+  margin: 0px 20px 40px 20px;
+  padding-top: 20px;
+  color: #dac7bc;
+}
+.tiposDeVinos {
+  display: flex;
+  justify-content: space-evenly;
+}
+.tiposDeVinos_item1 {
+  width: 350px;
+  height: 525px;
+  background-image: url(../img/blanco.jpg);
+}
+.tiposDeVinos_item1:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+.tiposDeVinos_item2 {
+  width: 350px;
+  height: 525px;
+  background-image: url(../img/tinto.jpg);
+}
+.tiposDeVinos_item2:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+.tiposDeVinos_item3 {
+  width: 350px;
+  height: 525px;
+  background-image: url(../img/rosado.jpg);
+}
+.tiposDeVinos_item3:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+.tiposDeVinos_vinculo1 {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  background-color: #043923;
+  color: #dac7bc;
+  opacity: 40%;
+  display: block;
+}
+.tiposDeVinos_vinculo2 {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  background-color: #043923;
+  color: #dac7bc;
+  opacity: 40%;
+  display: block;
+}
+.tiposDeVinos_vinculo3 {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  background-color: #043923;
+  color: #dac7bc;
+  opacity: 40%;
+  display: block;
+}
+/*FIN SECCION VINOS*/
+
+/*SECCION ESPUMANTES*/
+/*GRIDS ESPUMANTES*/
+
+.container--espumantes {
+  display: grid;
+  grid-template-columns: 350px auto 350px;
+  grid-template-rows: 1fr 80px auto auto;
+  grid-template-areas:
+    "header header header"
+    "menu menu menu"
+    "section section section"
+    "footer footer footer";
+}
+.header {
+  grid-area: header;
+}
+.menu {
+  grid-area: menu;
+}
+.espumantes__section {
+  grid-area: section;
+}
+.pieDePagina {
+  grid-area: footer;
+}
+
+/*FIN GRIDS ESPUMANTES*/
+
+.espumantes__section {
+  background-color: #dac7bc;
+  border-top: 2px solid #043923;
+  padding-bottom: 40px;
+}
+.espumantes__titulo {
+  font-size: 3rem;
+  font-family: "Abril Fatface", cursive;
+  margin: 0px 20px 40px 20px;
+  padding-top: 20px;
+  color: #043923;
+}
+.espumantes__lista {
+  display: flex;
+  justify-content: space-evenly;
+}
+.espumantes__item1 {
+  width: 350px;
+  height: 525px;
+  background-image: url(../img/esp2.jpg);
+}
+.espumantes__item1:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+.espumantes__item2 {
+  width: 350px;
+  height: 525px;
+  background-image: url(../img/esp1.jpg);
+}
+.espumantes__item2:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+.espumantes__item3 {
+  width: 350px;
+  height: 525px;
+  background-image: url(../img/esp3.jpg);
+}
+.espumantes__item3:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+.espumantes__vinculo1 {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  background-color: #043923;
+  color: #dac7bc;
+  opacity: 60%;
+  display: block;
+}
+.espumantes__vinculo2 {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  background-color: #043923;
+  color: #dac7bc;
+  opacity: 60%;
+  display: block;
+}
+.espumantes__vinculo3 {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  background-color: #043923;
+  color: #dac7bc;
+  opacity: 60%;
+  display: block;
+}
+
+/*COMIENZO FOOTER*/
+.pieDePagina {
+  color: #dac7bc;
+  background: radial-gradient(#0d4d32, #043923);
+}
+.pieDePagina_texto {
+  font-size: 1.5rem;
+  padding: 20px;
+  border-top: 2px solid #dac7bc;
+}
+#instagram {
+  color: #dac7bc;
+  font-size: 3rem;
+}
+
+.formulario {
+  text-decoration: underline;
+  font-size: large;
+  text-align: left;
+}
